@@ -17,7 +17,16 @@ if($point == "read"){
 }
 
 if($point == "drink"){
-    echo 'json request here: '.$point . ' -> ' . $sub;
-    $drink = new drink(1);
-    var_dump($drink);
+    //echo 'json request here: '.$point . ' -> ' . $sub;
+    if(is_numeric($sub)){
+        $drink = new drink($sub);
+        echo json_encode($drink);
+    }
+    else{
+        if($sub == "random"){
+            $r = rand(1,100);
+            $nd = new drink($r);
+            echo json_encode($nd);         
+        }        
+    }
 }
