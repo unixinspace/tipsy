@@ -1,4 +1,5 @@
 <?php 
+require_once('main.php');
 
 // Str: /point/sub
 $point = $_GET['point'];
@@ -15,4 +16,6 @@ if($point == "read"){
 
 }
 
-
+if($point == "drink"){
+    echo 'json request here: '.$point . ' -> ' . $sub;
+}
