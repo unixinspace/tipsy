@@ -7,7 +7,7 @@ class drink{
     public $up;
     public $down;
     public $score;
-    private $submitterid;
+    public $submitterid;
     public $submittername;
     
     function __construct($id){
@@ -33,5 +33,9 @@ class drink{
 
 class mixy{
 
+
+}
+
+class workplace{
 
 }
