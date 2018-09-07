@@ -2,6 +2,9 @@
 
 //main.php
 
+$types = array("Shot", "Tall drink", "Rocks glass");
+//$served = array();
+
 class drink{
     public $id;
     public $up;
@@ -9,7 +12,10 @@ class drink{
     public $score;
     public $submitterid;
     public $submittername;
-    
+    public $type;
+    public $contents;
+  //  public $served;    
+
     function __construct($id){
        //SQL for getting id, submitter name
         $this->id = $id;
@@ -18,6 +24,8 @@ class drink{
         $this->score = $this->up - $this->down;  
         $this->submitterid = 1;
         $this->submittername = "Joe Blow";
+        $this->type = 0;
+      //  $this->served = 0;
         
     }
 
@@ -32,7 +40,12 @@ class drink{
 }
 
 class mixy{
-
+    public $id;
+    public $username;
+    public $displayname;
+    function __construct($id){
+        $this->id = $id;
+    }
 
 }
 
