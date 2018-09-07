@@ -1,6 +1,8 @@
 <?php
-
+require_once("sql.php");
 //main.php
+
+
 
 $types = array("Shot", "Tall drink", "Rocks glass");
 //$served = array();
