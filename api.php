@@ -14,3 +14,5 @@ if($point == "read"){
     echo $sub;
 
 }
+
+phpinfo();

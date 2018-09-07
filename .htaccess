@@ -1,4 +1,4 @@
 # .htaccess
 # powers REST-ful api for Tipsy
 RewriteEngine On
-RewriteRule ^([a-z]{2})/([^/]+)/?$ api.php?point=$2&sub=$1 [L,QSA]
+RewriteRule ^api/([a-z]{2})/([^/]+)/?$ api.php?point=$2&sub=$1 [L,QSA]
