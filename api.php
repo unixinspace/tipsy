@@ -15,4 +15,4 @@ if($point == "read"){
 
 }
 
-phpinfo();
+
