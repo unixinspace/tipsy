@@ -3,7 +3,7 @@
 //main.php
 
 class drink{
-    private $id;
+    public $id;
     public $up;
     public $down;
     public $score;
@@ -13,9 +13,9 @@ class drink{
     function __construct($id){
        //SQL for getting id, submitter name
         $this->id = $id;
-        $this->ups = 6;
-        $this->downs = 2;
-        $this->score = $this->ups - $this->downs;  
+        $this->up = 6;
+        $this->down = 2;
+        $this->score = $this->up - $this->down;  
         $this->submitterid = 1;
         $this->submittername = "Joe Blow";
         

@@ -18,4 +18,6 @@ if($point == "read"){
 
 if($point == "drink"){
     echo 'json request here: '.$point . ' -> ' . $sub;
+    $drink = new drink(1);
+    var_dump($drink);
 }
